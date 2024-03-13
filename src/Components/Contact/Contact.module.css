@@ -1,51 +1,104 @@
-.avatar{
-   
-    width: 250px;
-}
-.line{
-    width: 80px;
-    height: 4px;
-    background-color: #2c3e50;
- 
-  
-}.line2{
-    width: 80px;
-    height: 4px;
-    background-color: #2c3e50;
-    
-}
-.boxx{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 15px;
-    
-}
-.box2{
-    display: flex;
-    padding-top: 8%;
-    text-align: center;
-    padding-bottom: 50px;
-    height: max-content;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; 
-    
+.avatar {
+
+  width: 250px;
 }
 
-.hi{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.line {
+  width: 80px;
+  height: 4px;
+  background-color: #2c3e50;
+
+
 }
+
+.line2 {
+  width: 80px;
+  height: 4px;
+  background-color: #2c3e50;
+
+}
+
+.boxx {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1px;
+
+}
+
+.box2 {
+  display: flex;
+  padding-top: 9%;
+  text-align: center;
+  padding-bottom: 1px;
+  height: max-content;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hi {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 .labelll{
-position: relative !important;
-top: 0 !important; 
-display: inline-block;
-margin-bottom: 7px;
-margin-right: 610px;
-margin-top: 4px;
-transition: top 0.6s ease 0s;
+  position: absolute;
+  top: 0; 
+  left: 0;
+  text-align: left;
+  display: block;
+  width: 100%;
+  height: 52px;
+  line-height: 72px;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 200;
+  background: transparent;
+  color: rgba(0,0,0,0.6);
+  margin: 0px auto;
+  cursor: text;
+  transition: all .15s ease-in-out;
+}
+.formmm{
+    position: relative;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #DDD;
+    background-color: transparent;
+    
+    outline: none !important;
+    font-size: 20px;
+    color: rgba(0,0,0,0.8);
+    background: -webkit-linear-gradient(bottom, #51BBBE 50%, #51BBBE 50%);
+    background: linear-gradient(to top, #51BBBE 50%, #51BBBE 50%);
+    background-position: left bottom;
+    background-size: 0 1px;
+    background-repeat: no-repeat;
+    transition: all .2s ease-in-out
+  }
 
+.formmm {
+  position: relative;
+  box-shadow: none !important;
+  border-color: #bfbfbf;
+}
+
+.formmm:focus {
+  color: var(--bs-body-color);
+  background-color: var(--bs-body-bg);
+  border-color: #bfbfbf !important;
+
+}
+
+
+.formmm:valid + .labelll { 
+  height: 20px; 
+  line-height: 20px; 
+  font-size: 11px;
+  color: #51BBBE;
 }

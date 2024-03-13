@@ -8,6 +8,10 @@ export default function Contact() {
   const[email,setemail]=useState(null);
   const[pass,setpass]=useState(null);
 
+  function show(){
+
+    
+  }
   const handleName = (fieldValue) => {
     if (fieldValue) {
       setName(fieldValue);
@@ -49,67 +53,59 @@ export default function Contact() {
             <i className='fa-solid fa-star mx-3' style={{color:'#2c3e50'}}></i>
             <div className={` me-3 ${styles.line2}`}></div>
             </div>
-            <div className='container w-50 pt-5 my-5'>
-              <from className="mb-3"> 
-             
-             {name ? (
-                <label className={styles.labelll}  style={{color:'#1abc9c'}} >
-                  userName:
-                </label>
-              ) : (
-                ''
-              )}
-              <div>
-               <input type="text" className="form-control positon-relative border-top-0 border-start-0 border-end-0 pb-3 " 
-               name="userName" id="userName"  
-               onChange={(e) => {
-                setName(e.target.value);
-                handleName(e.target.value);}} placeholder="userName"/>
-                
-             </div>
+            </div>
 
-             <div className=" ">
+
+            <div className='container w-50 pt-5 my-5 pb-1'>
+              <from className="mb-3"> 
+          
+
+               <input type="text" className={`form-control positon-relative border-top-0 border-start-0 border-end-0 pb-3 mb-5 ${styles.formmm}`} 
+               name="userName" id="userName"
+                 placeholder="" required/>
+                <label className={`${styles.labelll} `}  for="userName" >
+                username:
+              </label>
+
              { age ? (
-                <label className={styles.labelll}  style={{color:'#1abc9c'}} >
+                <label className={`${styles.labelll} `} >
                 userAge:
-              </label> ) : ( '' )}
+              </label> ) : ('')}
      
-               <input type="text" className="form-control border-top-0 border-start-0 border-end-0 pb-3 " name="userAge" id="userAge"
+               <input type="text" className={`form-control positon-relative border-top-0 border-start-0 border-end-0 pb-3 mb-5 ${styles.formmm}`} name="userAge" id="userAge"
                 onChange={(e) => {
                   setage(e.target.value);
                   handleage(e.target.value);}}  placeholder="useAge"/>
-             </div>
+            
 
-             <div className="">
+             
              {email ? (
-                <label className={styles.labelll}  style={{color:'#1abc9c'}} >
+                <label className={`${styles.labelll}`}  style={{color:'#1abc9c'}} >
                 userEmail:
               </label>
-              ) : (
-                ''
-              )}
+              ) : ('')}
                
-               <input type="email" className="form-control border-top-0 border-start-0 border-end-0 pb-3" name="userEmail" id="userEmail"
+               <input type="email" className={`form-control positon-relative border-top-0 border-start-0 border-end-0 pb-3 mb-5 ${styles.formmm}`} name="userEmail" id="userEmail"
                 onChange={(e) => {
                   setemail(e.target.value);
                   handleEmail(e.target.value);}}  placeholder="userEmail"/>
-             </div>
-             <div className="">
+           
+            
              {pass ? (
-                <label className={styles.labelll}  style={{color:'#1abc9c'}} >
+                <label className={`${styles.labelll}`}  style={{color:'#1abc9c'}} >
                 userPass:
               </label>
               ) : (
                 ''
               )}
               
-               <input type="password" className="form-control border-top-0 border-start-0 border-end-0 pb-3" name="userPassword" id="userPassword"
+               <input type="password" className={`form-control positon-relative border-top-0 border-start-0 border-end-0 pb-3 mb-5 ${styles.formmm}`} name="userPassword" id="userPassword"
                onChange={(e) => {
                 setpass(e.target.value);
                 handlepass( e.target.value);}} placeholder="userPassword"/>
-             </div>
              
-             <button type="button" className="btn  me-auto d-block mt-4" type='submit' style={{backgroundColor:'#1abc9c',color:'white',cursor:'pointer'}}>Send Message</button>
+             
+             <button className="btn  me-auto d-block mt-3 mb-5" type='submit' style={{backgroundColor:'#1abc9c',color:'white',cursor:'pointer'}}>Send Message</button>
             
              </from>
             </div>
@@ -117,6 +113,6 @@ export default function Contact() {
             
 
 </div>
-    </div>
+ 
   )
 }

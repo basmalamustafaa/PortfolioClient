@@ -1,0 +1,21 @@
+.navvv{
+    padding: 1.5rem 1.5rem 1.5rem 1.5rem !important ;
+    background-color:#2c3e50;
+    transition:padding 0.5s ease-in ;
+
+    
+}
+.navbar.active1{
+padding: 0.5rem 1.5rem 0.5rem 1.5rem !important;
+background-color:#2c3e50 !important;
+border-radius: 0px !important;
+transition:padding 0.6s ease-in ;
+
+
+}
+.navv2{
+    background-color:#2c3e50 !important;
+    border-radius: none ; 
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem ;
+    transition:padding 0.6s ease-in ;
+}
